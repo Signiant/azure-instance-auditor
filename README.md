@@ -8,13 +8,13 @@ The cred_file is under secret server. Look for 'Azure credential to execute vm-a
 For additional control, the audit.py script can also take in client id/secret/tenant id. the credentials must be corresponding with the environment (dev/prod)
 
 optional arguments:  \
--h, --help            show this help message and exit\
---client-id           (if chose to input manually/do not need the CRED_FILE flag)\
---client-secret       (if chose to input manually/do not need the CRED_FILE flag)\
---tenant-id           (if chose to input manually/do not need the CRED_FILE flag)\
---env ENV             azure environment (prod or dev). \
---cred-file CRED_FILE credential file. \
---verbose             verbose output. 
+ -h, --help                      show this help message and exit\
+ --client-id CLIENT_ID           (if chose to input manually/do not need the CRED_FILE flag)\
+ --client-secret CLIENT_SECRET   (if chose to input manually/do not need the CRED_FILE flag)\
+ --tenant-id TENANT_ID           (if chose to input manually/do not need the CRED_FILE flag)\
+ --env ENV                       azure environment (prod or dev). \
+ --cred-file CRED_FILE           credential file. \
+ --verbose                       verbose output. 
 
 
 **Examples:**  
