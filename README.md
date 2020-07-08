@@ -1,5 +1,5 @@
 # azure-instance-auditor
-How many instances are running in each region, grouped by name.\
+How many instances are running in each region, grouped by name.
 
 This takes inputs of Azure app credentials of app_client_id, app_client_secret, app_tenant_id, scans through all Azure regions, and will output the total number in each region, and number of each unique instance name.
 
