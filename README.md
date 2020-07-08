@@ -8,12 +8,12 @@ The cred_file is under secret server. Look for 'Azure credential to execute vm-a
 
 The script can pass in client id/secret/tenant id or the credential file. You must specify the environment (dev/prod)
 
-optional arguments:
--h, --help            show this help message and exit
---env ENV             azure environment (prod or dev)
---cred-file CRED_FILE
-                    credential file
---verbose             verbose output
+optional arguments:  
+-h, --help            show this help message and exit. 
+--env ENV             azure environment (prod or dev). 
+--cred-file CRED_FILE. 
+                    credential file. 
+--verbose             verbose output. 
 
 
 **Examples:**  
