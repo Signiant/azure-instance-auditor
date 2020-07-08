@@ -5,7 +5,7 @@ This takes inputs of Azure app credentials of app_client_id, app_client_secret, 
 
 **Usage:**  
 The cred_file is under secret server. Look for 'Azure credential to execute vm-audit-application' \
-The script can pass in client id/secret/tenant id or the credential file. You must specify the environment (dev/prod)
+The script can take in client id/secret/tenant id or the credential file. You must specify the environment (dev/prod)
 
 optional arguments:  \
 -h, --help            show this help message and exit\
