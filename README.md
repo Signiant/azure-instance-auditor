@@ -17,6 +17,7 @@ optional arguments:
 
 
 **Examples:**  
-docker build --tag name_of_auditor .
+`docker build --tag name_of_auditor .`
 
-docker run name_of_auditor  --cred-file CRED_FILE --verbose 
+`docker run name_of_auditor  --cred-file CRED_FILE --verbose 
+Total number of VM in prod Azure environment: 19`
