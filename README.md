@@ -21,4 +21,5 @@ optional arguments:  \
 `docker run name_of_auditor  --cred-file CRED_FILE --verbose` 
 
 output:\
-`Total number of VM in prod Azure environment: 19`
+`(if verbose vm will be listed by region follow by) 
+Total number of VM in prod Azure environment: 19`
