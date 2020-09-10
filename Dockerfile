@@ -13,4 +13,3 @@ COPY audit.py /src/
 WORKDIR /src
 
 ENTRYPOINT ["python","/src/audit.py"]
-CMD ["-h"]
