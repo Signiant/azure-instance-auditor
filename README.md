@@ -17,10 +17,13 @@ optional arguments:  \
  --verbose                       verbose output. 
 
 
-**Examples:**  
+**Examples:(local)**  
 `docker build --tag name_of_auditor .`
 
 `docker run name_of_auditor  --cred-file CRED_FILE --verbose` 
+
+**Examples:(dockerhub)**
+`docker run --rm -t -v ~/Downloads/cred.json:/root/cred.json:ro signiant/azure-instance-auditor --cred-file /root/cred.json --verbose`
 
 output:\
 `(if verbose vm will be listed by region follow by) 
