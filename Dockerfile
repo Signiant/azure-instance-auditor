@@ -6,9 +6,9 @@ RUN mkdir /src
 
 COPY audit.py /src/
 
-# In order for this Dockerfile to work you need to get the credential from sercret server
+# To run locally In order for this Dockerfile to work you need to get the credential from sercret server
 # then uncomment the following line
-COPY cred.json /src/
+# COPY cred.json /src/
 
 WORKDIR /src
 
