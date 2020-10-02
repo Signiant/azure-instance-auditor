@@ -35,6 +35,20 @@ def extra_api(client_id,client_secret, tenant_id, env, verbose=False):
             else:
                 region_vm_dict[vm.location].append(vm.name)
 
+        # grab all vm in all the Azure VM scale sets
+        vms_scale_sets = compute_client.virtual_machine_scale_sets.list_all()
+        for vm_s_set in vms_scale_sets:
+            id_list = vm_s_set.id.split('/')
+            resource_group = id_list[4]
+            scale_set_name = vm_s_set.name
+            vmss = compute_client.virtual_machine_scale_set_vms.list(resource_group,scale_set_name)
+            for vm in vmss:
+                count = count + 1
+                if vm.location not in region_vm_dict:
+                    region_vm_dict[vm.location] = [vm.name]
+                else:
+                    region_vm_dict[vm.location].append(vm.name)
+
     #print vms
     if verbose:
         for region in region_vm_dict:
